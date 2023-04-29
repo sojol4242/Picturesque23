@@ -1,6 +1,3 @@
- 
-#### N:B: My backend server was break because of heroku do their service premium. I am trying to solve this issue to get my project back. 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -62,8 +59,8 @@ You will also see any lint errors in the console.
 ```
  
 ### `live site` 
-<strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
-<strong>Server - </strong> <a href="https://photograpy-server-eight.vercel.app">server</a>
+<strong>project live site - </strong> <a href="https://picturesqueapp.netlify.app/">Live</a> <br/>
+<strong>Server - </strong> <a href="https://photograpy-backend.onrender.com/getNewServices">server</a>
 
 <h3>project-screenshot</h3>
 <!-- 
