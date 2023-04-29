@@ -1,0 +1,29 @@
+.footer {
+  background: var(--primary-color);
+  color: #fff;
+ 
+}
+ 
+  
+  
+/* #000099 */
+.copyRight {
+  font-size: 14px;
+}
+.siteName {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+ 
+}
+.siteName:hover {
+  color: #fff;
+}
+@media screen and (max-width: 968px) {
+.usefulLinks{
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+}
+    
+ }
