@@ -59,7 +59,7 @@ You will also see any lint errors in the console.
 ```
  
 ### `live site` 
-<strong>project live site - </strong> <a href="https://picturesqueapp.netlify.app/">Live</a> <br/>
+<strong>project live site - </strong> <a href="https://picturesque-cad49.web.app/">Live</a> <br/>
 <strong>Server - </strong> <a href="https://photograpy-backend.onrender.com/getNewServices">server</a>
 
 <h3>project-screenshot</h3>

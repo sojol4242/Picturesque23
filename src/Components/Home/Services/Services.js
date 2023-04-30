@@ -73,17 +73,17 @@ const Services = () => {
         </Swiper>
         </div>
       ) : (
-        // <div className="container d-flex justify-content-center align-items-center">
-        //   <img
-        //     src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
-        //     alt="loader"
-        //     title="Please Wait"
-        //     style={{ height: "200px", background: "transparent" }}
-        //   />
-        // </div>
-        <SwiperSlide>
-          <ServiceError />
-        </SwiperSlide>
+        <div className="container d-flex justify-content-center align-items-center">
+          <img
+            src="https://i.ibb.co/Q9Q72X2/99297-loading-files.gif"
+            alt="loader"
+            title="Please Wait....."
+            style={{ height: "200px", background: "transparent" }}
+          />
+        </div>
+        // <SwiperSlide>
+        //   <ServiceError />
+        // </SwiperSlide>
       )}
     </section>
   );

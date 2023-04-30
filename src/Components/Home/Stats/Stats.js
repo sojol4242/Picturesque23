@@ -21,7 +21,7 @@ const Stats = () => {
           />
           <div className="number">
             {" "}
-            <CountUp start={0} end={127} delay={0} duration={3}>
+            <CountUp start={0} end={27} delay={0} duration={3}>
               {({ countUpRef }) => (
                 <div>
                   <span ref={countUpRef} />+
@@ -34,7 +34,7 @@ const Stats = () => {
         <div className="single__stat shadow-lg">
         <img className="icon" src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-clients-media-agency-flaticons-flat-circular-flat-icons.png" alt="stat"/>
           <div className="number">
-            <CountUp start={0} end={2} delay={0} duration={2}>
+            <CountUp start={0} end={200} delay={0} duration={2}>
               {({ countUpRef }) => (
                 <div>
                   <span ref={countUpRef} />+
@@ -42,7 +42,7 @@ const Stats = () => {
               )}
             </CountUp>
           </div>
-          <span className="number__title">Publications</span>
+          <span className="number__title">Projects</span>
         </div>
 
       </div>
