@@ -9,25 +9,23 @@ import Footer from "../Common/Footer/Footer";
 import Contact from "./Contact/Contact";
 import ScrollTop from "../Common/ScrollTop";
 import WorksGallery from "./Works/WorksGallery";
-import FreeQuestion from "./FreQuestion/FreeQuestion";
+// import FreeQuestion from "./FreQuestion/FreeQuestion";
 import NavBar from "../Common/Header/NavBar";
 import Companies from "./Companies/Companies";
 import Qoutes from "./Qoutes";
+import Stats from "./Stats/Stats";
 
 const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="container-fluid">
-        <ScrollTop />
-
+      <div className="container">
+        <ScrollTop />    
         <Hero />
-
         <Qoutes />
-
         <About />
+        <Stats />
         <Services />
-
         {/* teams */}
         <Teams />
         {/* Works */}
@@ -36,10 +34,7 @@ const Home = () => {
         {/* <FreeQuestion /> */}
         {/* get in touch */}
         <Review />
-        {/* companies */}
-
         <Companies />
-
         {/* Contact Us */}
         <Contact />
 

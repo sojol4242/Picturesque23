@@ -31,7 +31,6 @@ const NavBar = () => {
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
-  
   };
 
   return (
@@ -72,59 +71,30 @@ const NavBar = () => {
         {/* || isSticky?"navLinksChange active":"navLinksChange" */}
 
         <nav className={showLinks ? "navLinks active" : "navLinks"}>
-          <a
-            href="#"
-            className={isSticky ? "navLinkChange" : "navLink"}
-            
-       
-          >
+          <a href="#" className={isSticky ? "navLinkChange" : "navLink"}>
             Home
           </a>
-          <a
-            href="#about"
-            className={isSticky ? "navLinkChange" : "navLink"}
-         
-          >
+          <a href="#about" className={isSticky ? "navLinkChange" : "navLink"}>
             About
           </a>
           <a
             href="#services"
             className={isSticky ? "navLinkChange" : "navLink"}
             onClick={toggleLinks}
-          
           >
             Services
           </a>
-          <a
-            href="#teams"
-            className={isSticky ? "navLinkChange" : "navLink"}
-      
-          >
+          <a href="#teams" className={isSticky ? "navLinkChange" : "navLink"}>
             Teams
           </a>
 
-          <a
-            href="#works"
-            className={isSticky ? "navLinkChange" : "navLink"}
-        
- 
-          >
+          <a href="#works" className={isSticky ? "navLinkChange" : "navLink"}>
             Portfolio
           </a>
-          <a
-            href="#reviews"
-            className={isSticky ? "navLinkChange" : "navLink"}
-  
-            
-          >
+          <a href="#reviews" className={isSticky ? "navLinkChange" : "navLink"}>
             Testimonials
           </a>
-          <a
-            href="#contact"
-            className={isSticky ? "navLinkChange" : "navLink"}
-  
-          
-          >
+          <a href="#contact" className={isSticky ? "navLinkChange" : "navLink"}>
             Contact
           </a>
         </nav>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Qahiri&family=Zen+Loop:ital@0;1&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Unbounded:wght@200;400;500;600;800&display=swap');
 .navBar {
   top: 0;
   position: sticky;
@@ -12,7 +12,7 @@
   padding: 0 1rem;
   box-shadow: 0 2px 5px 1px rgb(64 60 67 / 15%);
   position: fixed !important;
-  z-index: 20000 !important;
+  z-index: 2000 !important;
   transition: 0.5s !important;
 }
 .navBarChange {
@@ -51,10 +51,11 @@
 .brand .brandText {
   color: var(--primary-color);
   font-weight: 700;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   text-transform: uppercase;
   font-size: 16px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Space Grotesk', sans-serif;
+  /* font-family: 'Unbounded', cursive; */
   cursor: pointer;
 }
 .brand .brandIconChange {
@@ -69,10 +70,11 @@
 .brand .brandTextChange {
   color: #fff;
   font-weight: 700;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   text-transform: uppercase;
   font-size: 16px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Space Grotesk', sans-serif;
+
   cursor: pointer;
 }
 .navLinks {

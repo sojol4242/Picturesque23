@@ -24,7 +24,7 @@ const Qoutes = () => {
       <Marquee
         className="marqueeText mt-5"
         pauseOnClick={true}
-        pauseOnClick={true}
+      
         speed={20}
         style={{
         background:"transparent !important"

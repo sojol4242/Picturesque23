@@ -3,18 +3,97 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap/Carousel";
 import { motion } from "framer-motion";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import ReactTypingEffect from "react-typing-effect";
 import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDribbble,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   return (
-    <section className="container-fluid">
-      <Carousel className="w-100 m-auto">
+    <>
+      <div className="hero">
+        <div className="slider">
+          <div className="hero-carousel">
+            <div className="carousel slide carousel-fade" data-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <Carousel>
+                    {carousalData.map((carousal) => (
+                      <Carousel.Item key={carousal._id}>
+                        <img src={carousal.img} alt={carousal.title}/>
+                      </Carousel.Item>
+                    ))}
+                  </Carousel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="red-sec hide"></div>
+        <div className="lrb"></div>
+        <div className="lgb"></div>
+        <div className="l-box">
+          <div className="s-down">
+            <a href="#works">checkout our works</a>
+          </div>
+
+          <div className="social-wrapper">
+            <ul>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon icon={faDribbble} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="intro-box">
+          <div className="in-title hide text-uppercase">
+            {" "}
+            <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
+          </div>
+          <div className="in-txt text-uppercase">
+            A place for better photography
+          </div>
+          <div className="in-b-txt hide">
+            Work around you and your team and grow your business.
+          </div>
+
+          <a
+            href="#services"
+            class="button-block button-block--brand active hide"
+          >
+            Hire Us
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
+{
+  /*   <Carousel>
         {carousalData.map((carousal) => (
           <Carousel.Item key={carousal._id}>
-            <Zoom duration={1000}>
+            
               <div className="row hero">
                 <div className="col-md-12  col-sm-12 hero-content mt-5">
                   <p className="hero-title-span">
@@ -41,12 +120,8 @@ const Hero = () => {
                   </a>
                 </div>
               </div>
-            </Zoom>
+            
           </Carousel.Item>
         ))}
-      </Carousel>
-    </section>
-  );
-};
-
-export default Hero;
+      </Carousel> */
+}

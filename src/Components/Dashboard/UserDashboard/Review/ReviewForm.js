@@ -30,7 +30,7 @@ const ReviewForm = () => {
       img: img,
       date: selectedDate.toLocaleDateString("en-US"),
     };
-    const url = "https://photograpy-server-eight.vercel.app/addReview";
+    const url = "https://photograpy-backend.onrender.com/addReview";
 
     fetch(url, {
       method: "POST",

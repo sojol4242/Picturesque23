@@ -1,26 +1,21 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { GoogleAuthProvider } from "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import "firebase/auth";
+import firebase from "firebase/app";
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
-  measurementId: process.env.REACT_APP_measurementId,
+  apiKey: "AIzaSyB4j80wqK42KdVJM4Pv0cDNeKZOhBDJf04",
+  authDomain: "picturesque-cad49.firebaseapp.com",
+  projectId: "picturesque-cad49",
+  storageBucket: "picturesque-cad49.appspot.com",
+  messagingSenderId: "458968508677",
+  appId: "1:458968508677:web:aabb8ba9d06007cde06f6c",
+  measurementId: "G-XEKYWJDK6L"
 };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const googleProvider = new GoogleAuthProvider();
-googleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-export { app, analytics, googleProvider };
+//   if (!firebase.apps.length) {
+//     firebase.initializeApp(firebaseConfig);
+//  } 
+  
+//  const auth=firebase.auth();
+ const googleProvider=new firebase.auth.GoogleAuthProvider();
+//  // const githubProvider =  new firebase.auth.GithubAuthProvider();
+ 
+ export { firebaseConfig,googleProvider};

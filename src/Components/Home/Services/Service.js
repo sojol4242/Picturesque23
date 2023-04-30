@@ -8,7 +8,7 @@ const Service = ({ service }) => {
   const { _id, serviceName, img,  price } = service;
 
   return (
-    <div className="service">
+    <div className="service mx-auto">
       <div className="serviceImg">
         <img src={img} alt={serviceName} />
       </div>

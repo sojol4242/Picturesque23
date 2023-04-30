@@ -13,7 +13,7 @@ const About = () => {
     <section className="container-fluid about_Section" id="about">
       <div className="row about">
         <Fade duration={2500} left distance="140px">
-          <div className="col-md-6 col-sm-12 about-banner shadow-sm rounded mx-auto">
+          <div className="col-md-6 col-sm-12 about-banner mx-auto">
             <Carousel className="h-100 w-100 m-auto">
               {carousalData.map((carousal) => (
                 
@@ -49,8 +49,9 @@ const About = () => {
               story.
             </p>
           </Fade>
+          
           <Zoom left distance="140px">
-            <a href="#contact">
+            <a href="#contact" >
               <motion.button
                 whileHover={{
                   scale: 1.01,

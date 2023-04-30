@@ -11,12 +11,12 @@ const ServiceError = () => {
           <img src="https://i.ibb.co/6Nr9Hhm/undraw-Artificial-intelligence-re-enpp.png" alt="serviceName" />
         </div>
         <div className="serviceContent">
-          <h2>Service Name</h2>
+          <h2>Error Occured</h2>
          
           <div className="servicePrice">
-            <h3>Price:</h3>
-            <h3 className="price">5000</h3>
-            <h3 className="price_tag">TK/Day</h3>
+            <h3>Null</h3>
+            <h3 className="price">Null</h3>
+            {/* <h3 className="price_tag">TK/Day</h3> */}
           </div>
           <Link to="#">
             <motion.button

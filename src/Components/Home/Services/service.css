@@ -1,6 +1,5 @@
-#services {
-  padding-top: 100px;
-  margin-bottom: 5rem;
+.services {
+  width: 100%;
 }
 .services_head {
   padding: 30px;
@@ -22,6 +21,7 @@
   width: 350px;
   position: relative;
   border-radius: 6px;
+  /* background:#13112771; */
   box-shadow: 0 1px 5px 0px rgba(130, 130, 130, 0.264);
   border: none !important;
   cursor: pointer;
@@ -64,7 +64,8 @@
   position: absolute;
   top: 45%;
   left: 50%;
-  width: 200px;
+  width: 100%;
+
   transform: translate(-50%, -50%);
 }
 .service .serviceContent {

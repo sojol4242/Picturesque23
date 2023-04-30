@@ -1,20 +1,20 @@
-import { getAuth, getRedirectResult, GoogleAuthProvider } from "firebase/auth";
-import { app } from "./firebase.config";
+import firebase from "firebase/app";
+import "firebase/auth"
+import { firebaseConfig } from "./firebase.config";
 import jwt_decode from "jwt-decode";
-// if(!firebase.apps.length){
-//     firebase.initializeApp(app);
-// }
-
-const auth = getAuth();
+if(!firebase.apps.length){
+    firebase.initializeApp(firebaseConfig);
+}
+ 
 const setToken = () => {
-  auth.currentUser.getIdToken(true)
+  firebase.auth().currentUser.getIdToken(true)
   .then(function(idToken) {
     localStorage.setItem('token', idToken);
   })
 }
 
 export const loginWithProvider = (provider) => {
-    return auth.signInWithPopup(provider)
+    return firebase.auth().signInWithPopup(provider)
     .then( res => {
         setToken();
         return handleResponse(res);
@@ -25,6 +25,34 @@ export const loginWithProvider = (provider) => {
         return message;
     });
 };
+
+// export const createAccount = (email, password) => {
+//     return firebase.auth().createUserWithEmailAndPassword(email, password)
+//     .then( res => {
+//       setToken();
+//       return handleResponse(res);
+//     })
+//     .catch( error  => {
+//       const message = {
+//         error: error.message
+//       }
+//       return message;
+//     });
+// }
+
+// export const loginWithEmail = (email, password) =>{
+//   return firebase.auth().signInWithEmailAndPassword(email, password)
+//   .then( res => {
+//     setToken();
+//     return handleResponse(res);
+//   })
+//   .catch( error => {
+//       const message = {
+//       error: error.message
+//       }
+//       return message;
+//   });
+// }
 
 const defaultName = (str) => {
   let myStr = str
@@ -59,7 +87,7 @@ export const getDecodedUser = () => {
 }
 
 export const handleSignOut = () => {
-  return auth.signOut()
+  return firebase.auth().signOut()
     .then(() => {
         localStorage.removeItem('token');
         const signedOutUser = {

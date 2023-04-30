@@ -20,9 +20,9 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="container-fluid">
+    <section id="services" className="services container-fluid">
       <div className="row">
-        <div className="services_head col-md-12 text-center m-auto">
+        <div className="services_head col-md-12 text-center mx-auto">
           <h2 className="title">
             {" "}
             <span>Services</span> We Provide
@@ -31,6 +31,7 @@ const Services = () => {
       </div>
 
       {newServices.length > 0 ? (
+        <div className="container">
         <Swiper
           pagination={true}
           loop={true}
@@ -59,15 +60,18 @@ const Services = () => {
           grabCursor={true}
           centeredSlides={true}
         >
-          {
-            //
+         
+        {
+            
             newServices.map((service) => (
               <SwiperSlide>
                 <Service service={service} key={service._id} />
               </SwiperSlide>
             ))
           }
+         
         </Swiper>
+        </div>
       ) : (
         // <div className="container d-flex justify-content-center align-items-center">
         //   <img

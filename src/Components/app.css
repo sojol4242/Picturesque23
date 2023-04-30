@@ -1,27 +1,33 @@
+:root {
+  --primary-color: #131127;
+  --span-color: #212241;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-:root {
-  --primary-color: #131127;
-  --span-color: #212241;
+html,
+body {
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+
 a {
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 li {
   list-style: none;
 }
-body {
-  font-family: "Ubuntu", sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
