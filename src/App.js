@@ -10,6 +10,7 @@ import { getDecodedUser } from "./Components/Auth/LoginManager";
 import NotFound from "./Components/NotFound/NotFound";
 import ProviderLogin from "./Components/Auth/ProviderLogin/ProviderLogin";
 
+
 // Practice code splitting
 const Home = React.lazy(() => import("./Components/Home/Home"));
 

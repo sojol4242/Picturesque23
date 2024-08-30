@@ -7,6 +7,7 @@ import Footer from "../../../Common/Footer/Footer";
 import Payment from "./Payment";
  
 import { UserContext } from "../../../../App";
+import NavBar from "../../../Common/Header/NavBar";
  
 const CheckOutForm = () => {
   const { user } = useContext(UserContext);
@@ -61,7 +62,7 @@ const CheckOutForm = () => {
   };
 
   useEffect(() => {
-    fetch("https://photograpy-server-eight.vercel.app/getNewServices")
+    fetch("https://photograpy-backend.onrender.com/getNewServices")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
@@ -82,8 +83,8 @@ const CheckOutForm = () => {
 
   return (
     <>
- 
-      <section className="container-fluid checkOut h-100 py-5"
+ <NavBar/>
+      <section className="container-fluid checkOut"
       style={{borderBottom:"1px solid #fff"}}
       >
         {selectedService ? (

@@ -6,6 +6,8 @@ import Orders from './AllOrder/Orders';
 import BookedOrders from './BookedOrder/BookedOrders';
 import Profile from './Profile/Profile';
 import ReviewForm from './Review/ReviewForm';
+import Map from './Map/Map';
+import MapComponent from './Map/Map';
 
 const UserDashBoard = () => {
     return (
@@ -16,6 +18,7 @@ const UserDashBoard = () => {
                <Route path="/dashboard/addServices"><AddService/></Route>
                <Route path="/dashboard/profile"><Profile/></Route>
                <Route path="/dashboard/review"><ReviewForm/></Route>
+               <Route path="/dashboard/map"><Map/></Route>
         </Switch>
     );
 };

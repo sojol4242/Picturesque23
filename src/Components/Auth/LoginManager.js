@@ -1,10 +1,10 @@
 import firebase from "firebase/app";
 import "firebase/auth"
-import { firebaseConfig } from "./firebase.config";
+// import { firebaseConfig } from "./firebase.config";
 import jwt_decode from "jwt-decode";
-if(!firebase.apps.length){
-    firebase.initializeApp(firebaseConfig);
-}
+// if(!firebase.apps.length){
+//     firebase.initializeApp(firebaseConfig);
+// }
  
 const setToken = () => {
   firebase.auth().currentUser.getIdToken(true)

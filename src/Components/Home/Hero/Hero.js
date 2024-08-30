@@ -2,8 +2,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap/Carousel";
-import { motion } from "framer-motion";
-// import Zoom from "react-reveal/Zoom";
+import { Link } from "react-router-dom";
 import ReactTypingEffect from "react-typing-effect";
 import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
@@ -18,70 +17,82 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <div className="slider">
-          <div className="hero-carousel">
-            <div className="carousel slide carousel-fade" data-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <Carousel>
-                    {carousalData.map((carousal) => (
-                      <Carousel.Item key={carousal._id}>
-                        <img src={carousal.img} alt={carousal.title}/>
-                      </Carousel.Item>
-                    ))}
-                  </Carousel>
+        <div className="hero_left">
+          <div className="slider">
+            <div className="hero-carousel">
+              <div
+                className="carousel slide carousel-fade"
+                data-ride="carousel"
+              >
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <Carousel>
+                      {carousalData.map((carousal) => (
+                        <Carousel.Item key={carousal._id}>
+                          <img src={carousal.img} alt={carousal.title} />
+                        </Carousel.Item>
+                      ))}
+                    </Carousel>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="red-sec hide"></div>
-        <div className="lrb"></div>
-        <div className="lgb"></div>
-        <div className="l-box">
-          <div className="s-down">
-            <a href="#works">checkout our works</a>
-          </div>
+          <div className="red-sec hide"></div>
+          <div className="lrb"></div>
+          <div className="lgb"></div>
+          <div className="l-box">
+            <div className="s-down">
+              <a href="#works">services of TracePoint</a>
+            </div>
 
-          <div className="social-wrapper">
-            <ul>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faDribbble} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-            </ul>
+            <div className="social-wrapper">
+              <ul>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon icon={faDribbble} />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="intro-box">
-          <div className="in-title hide text-uppercase">
+          <div className="in-title text-uppercase  hide">
             {" "}
-            <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
+            <ReactTypingEffect text={["Welcome To", "TracePoint"]} />
           </div>
           <div className="in-txt text-uppercase">
-            A place for better photography
+            An ultimate solution of BSMRSTU Transportation
           </div>
           <div className="in-b-txt hide">
-            Work around you and your team and grow your business.
+            Work around our student , teacher and stuffs
           </div>
-
-          <a
-            href="#services"
-            class="button-block button-block--brand active hide"
-          >
-            Hire Us
-          </a>
+        
+            {/* <a
+              href="http://localhost:3001/"
+              className="button-block button-block--brand active hide"
+              target="_blank"
+            >
+              Trace Bus
+            </a> */}
+            <Link to="/dashboard/map" className="button-block button-block--brand active hide">
+         
+            Trace Bus
+         
+        </Link>
+        
         </div>
       </div>
     </>

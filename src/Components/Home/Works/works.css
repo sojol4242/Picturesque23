@@ -1,10 +1,11 @@
 /* Portfolio Section */
 #portfolio {
+	width: 100%;
 	padding: 100px 0;
 }
 .portfolio-item {
-	margin: 1px -15px 0 -14px;
-	padding: 0;
+	/* margin: 1px -15px 0 -14px;
+	padding: 0; */
 
 }
 .portfolio-item .hover-bg {

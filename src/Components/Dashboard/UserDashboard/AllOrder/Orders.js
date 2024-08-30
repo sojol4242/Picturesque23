@@ -25,25 +25,25 @@ const Orders = () => {
           <thead>
             <tr>
               <th className="text-dark text-left" scope="col">
-                SL No
+                SL No.
               </th>
               <th className="text-dark" scope="col">
-                Ordered By
+                Driver Name
               </th>
               <th className="text-dark" scope="col">
-                User Email
+                 Email
               </th>
               <th className="text-dark" scope="col">
-                Service Name
+                Mobile
               </th>
               <th className="text-dark" scope="col">
-                Price(TK/DAY)
+                Bus Number
               </th>
               <th className="text-dark" scope="col">
                 Date
               </th>
               <th className="text-dark" scope="col">
-                Order Status
+                Status
               </th>
             
             </tr>

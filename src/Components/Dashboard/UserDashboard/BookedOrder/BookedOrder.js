@@ -8,7 +8,7 @@ const BookedOrder = ({ order, index }) => {
  
   return (
     <>
-      {email === user.email && (
+      {/* {email === user.email && (
         <tr>
           <td>{index++}</td>
           <td>{name}</td>
@@ -17,7 +17,15 @@ const BookedOrder = ({ order, index }) => {
           <td>{servicePrice}</td>
           <td>{date}</td>
         </tr>
-      )}
+      )} */}
+      <tr>
+      <td>{index++}</td>
+      <td>Name 1</td>
+      <td>email@gmail.com</td>
+      <td>0178...</td>
+      <td>BM-5464</td>
+      <td>02/08/24</td>
+      </tr>
     </>
   );
 };

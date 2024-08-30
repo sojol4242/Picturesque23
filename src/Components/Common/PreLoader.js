@@ -7,10 +7,10 @@ const PreLoader = () => {
       style={{ height: "100vh" }}
     >
       <img
-       className="h-100 img-fluid"
-        src="https://i.ibb.co/bW5xKGC/50056-camera-moving.gif"
-        alt="Welcome to Picturesque"
-        title="Welcome to Picturesque"
+       className="h-75 img-fluid"
+        src="https://media.lordicon.com/icons/wired/flat/18-location-pin.gif"
+        alt="Welcome to TracePoint"
+        title="Welcome to tracePoint"
       />
     </div>
   );

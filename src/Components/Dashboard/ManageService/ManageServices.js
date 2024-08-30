@@ -27,9 +27,9 @@ const ManageServices = () => {
           <thead>
             <tr>
               <th>Sl No.</th>
-              <th>Name</th>
+              <th>Driver Name</th>
               <th>Date</th>
-              <th>Price(Tk/Day)</th>
+              <th>Bus Number</th>
               <th>Action</th>
             </tr>
           </thead>

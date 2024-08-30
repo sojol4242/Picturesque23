@@ -10,7 +10,7 @@ const Team = ({ data, id }) => {
   return (
     <Tab.Pane eventKey={id + 1}>
       <div className="container-fluid my-3 teamCards">
-        {data.map(({ img, name, linkedin, position, github ,phone}, index) => {
+        {data.map(({ img, name, linkedin, position, identity,github ,phone}, index) => {
           return (
              
               <Fade left duration={1800} distance="140px">
@@ -22,6 +22,7 @@ const Team = ({ data, id }) => {
                     <h4 className="mt-2">{name}</h4>
    
                     <p className="position">{position}</p> 
+                    <p className="identity">{identity}</p> 
                     <p className="phone"><span>Phone: </span> {phone}</p> 
                   </div>
                   <div className="social-links">

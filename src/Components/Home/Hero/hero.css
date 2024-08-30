@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .hide {
+    display: none !important;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -11,7 +16,6 @@
   z-index: 3;
   left: 20%;
   top: 10%;
-  
 }
 @media only screen and (max-width: 768px) {
   .slider {
@@ -81,14 +85,14 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org");
   opacity: 1;
   height: 100px;
-  
+
   background-repeat: no-repeat;
 }
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org");
   opacity: 1;
   height: 100px;
- 
+
   background-repeat: no-repeat;
   float: left;
 }
@@ -96,19 +100,19 @@
 /*.......Sec Two...........*/
 .lrb {
   position: absolute;
-  width:2.5vw;
-  height:80vh;
-   background-color: #131127;
-  right:0;
-  top:0;
+  width: 2.5vw;
+  height: 80vh;
+  background-color: #131127;
+  right: 0;
+  top: 0;
 }
 .lgb {
   position: absolute;
-  width:2.5vw;
- background-color: #5d5c69 !important;
-  bottom:0;
-  right:0;
-  height:20vh;
+  width: 2.5vw;
+  background-color: #5d5c69 !important;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
 }
 .red-sec {
   position: absolute;
@@ -312,6 +316,8 @@
   .social-wrapper a {
     color: #04011f !important;
   }
+
+ 
 }
 .social-wrapper a:hover {
   cursor: pointer;

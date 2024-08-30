@@ -1,3 +1,6 @@
+// This is a markdown file that provides information about a project called "Picturesque". It includes
+// instructions on how to clone the repository, technologies used for both frontend and backend, the
+// motive behind the project, a live site link, and project screenshots.
 
 ## Available Scripts
 
@@ -73,3 +76,4 @@ https://i.ibb.co/vqVSJL1/Screenshot-178.png
 # And many more.... 
  
 # Picturesque23
+# TracePoint-Web-APP-IoT-Based-GPS-tracer-

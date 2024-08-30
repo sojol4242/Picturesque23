@@ -68,25 +68,25 @@ const AddService = () => {
       <Form onSubmit={handleSubmit(onSubmit)} className="addServiceForm">
         <Row className="justify-content-center px-4">
           <Form.Group as={Col} md={7}>
-            <Form.Label style={{ fontWeight: "bold" }}>Service Name</Form.Label>
+            <Form.Label style={{ fontWeight: "bold" }}>Driver Name</Form.Label>
             <Form.Control
               type="text"
               defaultValue={serviceName}
               {...register("serviceName", { required: true })}
-              placeholder="Your Name"
+              placeholder="Driver Name"
             />
           </Form.Group>
           <Form.Group as={Col} md={5}>
-            <Form.Label style={{ fontWeight: "bold" }}>Price</Form.Label>
+            <Form.Label style={{ fontWeight: "bold" }}>Bus Number</Form.Label>
             <Form.Control
               type="text"
               defaultValue={price}
               {...register("price", { required: true })}
-              placeholder="Price"
+              placeholder="Bus Number"
             />
           </Form.Group>
           <Form.Group as={Col} md={7}>
-            <Form.Label style={{ fontWeight: "bold" }}>Description</Form.Label>
+            <Form.Label style={{ fontWeight: "bold" }}>Details</Form.Label>
             <Form.Control
               style={{ height: "10rem" }}
               type="text"

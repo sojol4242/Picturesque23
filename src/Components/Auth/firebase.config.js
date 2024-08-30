@@ -1,21 +1,21 @@
-
-import "firebase/auth";
 import firebase from "firebase/app";
+
+import "firebase/database"
+import "firebase/auth";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyB4j80wqK42KdVJM4Pv0cDNeKZOhBDJf04",
-  authDomain: "picturesque-cad49.firebaseapp.com",
-  projectId: "picturesque-cad49",
-  storageBucket: "picturesque-cad49.appspot.com",
-  messagingSenderId: "458968508677",
-  appId: "1:458968508677:web:aabb8ba9d06007cde06f6c",
-  measurementId: "G-XEKYWJDK6L"
+  apiKey: "AIzaSyAqrSQQBlYopEnHxlTzTy_w50gI98UWKMc",
+  authDomain: "tracepoint-a2ae7.firebaseapp.com",
+  projectId: "tracepoint-a2ae7",
+  storageBucket: "tracepoint-a2ae7.appspot.com",
+  messagingSenderId: "63241441004",
+  appId: "1:63241441004:web:d2a9af4ffe0c0bca7e1fc9",
+  measurementId: "G-RHXLKNW3V2"
 };
-//   if (!firebase.apps.length) {
-//     firebase.initializeApp(firebaseConfig);
-//  } 
-  
-//  const auth=firebase.auth();
+const app=null;
+if(!firebase.apps.length){
+  firebase.initializeApp(firebaseConfig);
+}
+const db= firebase.database()
  const googleProvider=new firebase.auth.GoogleAuthProvider();
-//  // const githubProvider =  new firebase.auth.GithubAuthProvider();
- 
- export { firebaseConfig,googleProvider};
+ export { app,googleProvider,db};

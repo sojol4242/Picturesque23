@@ -50,10 +50,9 @@
 }
 .brand .brandText {
   color: var(--primary-color);
-  font-weight: 700;
-  /* letter-spacing: 4px; */
-  text-transform: uppercase;
-  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 22px;
   font-family: 'Space Grotesk', sans-serif;
   /* font-family: 'Unbounded', cursive; */
   cursor: pointer;

@@ -1,3 +1,4 @@
+import React from "react";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {
   faAppStoreIos,
@@ -8,18 +9,18 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 import "./footer.css";
 import SubFooter from "./SubFooter";
-import nav_Icon from "../../../images/undraw_product_photography_91i2.svg";
+import nav_Icon from "../../../images/undraw_Current_location_re_j130.png";
+
 
 const Footer = () => {
   const scrollTop = () => window["scrollTo"]({ top: 0, behavior: "smooth" });
   return (
     <section id="footer" className="container-fluid footer">
-      <div className="row py-5 px-2 mx-auto">
-        <div className="col-md-4 col-sm-12">
+      <div className="row mx-auto">
+        <div className="d-flex flex-column justify-content-center align-items-center col-md-4 col-sm-12">
           <div className="leftTop  text-center">
             <div
               title="www.picturesque.org"
@@ -51,14 +52,13 @@ const Footer = () => {
                   }}
                 />
                 <span
-                  className="text-white px-3"
+                  classNameName="text-white px-3"
                   style={{
                     fontFamily: "Dancing Script",
-                    textTransform: "uppercase",
                     fontSize: "18px",
                   }}
                 >
-                  Picturesque
+                  TracePoint
                 </span>
               </div>
               <span
@@ -71,7 +71,7 @@ const Footer = () => {
               ></span>
             </div>
           </div>
-          <div className="leftBottom mt-2">
+          <div className="leftBottom mt-2 d-flex flex-column justify-content-center align-items-center">
             <h4
               className="text-uppercase"
               style={{
@@ -86,16 +86,15 @@ const Footer = () => {
               className="mobileApp mt-4"
               style={{
                 display: "flex",
-                justifyContent:"flex-start",
+                justifyContent: "flex-start",
                 alignItems: "center",
                 cursor: "pointer",
-
               }}
             >
               <FontAwesomeIcon
                 icon={faGooglePlay}
                 title="Android"
-                style={{ height: "50px",  width: "60px", cursor: "pointer" }}
+                style={{ height: "50px", width: "60px", cursor: "pointer" }}
               />
               <FontAwesomeIcon
                 icon={faAppStoreIos}
@@ -105,8 +104,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="usefulLinks col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center my-5">
-          <div className=" my-5">
+        <div class="usefulLinks col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center my-5 text-center">
+          <div className="my-5">
             <h6
               className="text-uppercase"
               style={{
@@ -115,7 +114,7 @@ const Footer = () => {
             >
               Useful Links
             </h6>
-            <div className="usefulLink d-flex flex-column justify-content-start align-items-start">
+            <div className="usefulLink d-flex flex-column justify-content-center align-items-center">
               <a
                 href="#"
                 style={{
@@ -227,7 +226,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="bg-white"/>
+      <hr className="bg-white" />
       <div className="row">
         <div className="col-md-12 my-2">
           <SubFooter />

@@ -50,7 +50,7 @@ const Companies = () => {
       >
         Recently We Worked For
       </h2>
-      <Marquee pauseOnClick={true} pauseOnClick={true} speed={30}>
+      <Marquee pauseOnClick={true} speed={30}>
         <div className="container-fluid d-flex justify-content-around align-items-center">
           {companiesData.map((companies) => (
             <a

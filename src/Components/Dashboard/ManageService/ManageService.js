@@ -11,7 +11,7 @@ const ManageService = ({service, index}) => {
   const handleDelete = () => {
     swal({
       title: "Are you sure?",
-      text: "Are you sure! you want to delete this service?",
+      text: "Are you sure! you want to delete the driver info?",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -23,7 +23,7 @@ const ManageService = ({service, index}) => {
           .then((res) => {
             toast.dismiss(loading);
             if (res) {
-              toast.success("Service deleted successfully!");
+              toast.success("Driver Data deleted successfully!");
             //   History.push("./")
             } else {
               toast.error("Something went wrong, please try again");

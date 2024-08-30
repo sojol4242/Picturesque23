@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../../App";
-import nav_Icon from "../../../images/undraw_product_photography_91i2.svg";
+import nav_Icon from "../../../images/undraw_Current_location_re_j130.png";
 import "./navBar.css";
 import UserProfilePopUp from "./UserProfilePopUp";
 
@@ -65,15 +65,15 @@ const NavBar = () => {
             alt="logo"
           />
           <span className={isSticky ? "brandTextChange" : "brandText"}>
-            Picturesque
+            TracePoint
           </span>
         </div>
         {/* || isSticky?"navLinksChange active":"navLinksChange" */}
 
         <nav className={showLinks ? "navLinks active" : "navLinks"}>
-          <a href="#" className={isSticky ? "navLinkChange" : "navLink"}>
+          <Link to="/" className={isSticky ? "navLinkChange" : "navLink"}>
             Home
-          </a>
+            </Link>
           <a href="#about" className={isSticky ? "navLinkChange" : "navLink"}>
             About
           </a>
@@ -87,13 +87,13 @@ const NavBar = () => {
           <a href="#teams" className={isSticky ? "navLinkChange" : "navLink"}>
             Teams
           </a>
-
+{/* 
           <a href="#works" className={isSticky ? "navLinkChange" : "navLink"}>
             Portfolio
           </a>
           <a href="#reviews" className={isSticky ? "navLinkChange" : "navLink"}>
             Testimonials
-          </a>
+          </a> */}
           <a href="#contact" className={isSticky ? "navLinkChange" : "navLink"}>
             Contact
           </a>

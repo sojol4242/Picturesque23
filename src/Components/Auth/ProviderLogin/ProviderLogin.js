@@ -41,10 +41,10 @@ const ProviderLogin = () => {
   
    <div className="container">
    <div className="row auth">
-          <Fade duration={2000} left>
+          <Fade duration={200} left>
             <div className="col-md-4 col-lg-4 col-sm-12 mx-auto auth-left">
               <p className="hero-title-span">
-                <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
+                <ReactTypingEffect text={["Welcome To", "TracePoint"]} />
               </p>
 
               <h2>Sign In with your google account</h2>
@@ -60,7 +60,7 @@ const ProviderLogin = () => {
               </div>
               <p className="mt-3">
                 Back to landing page{" "}
-                <Link to="/home">wwww.picturesque.org</Link>{" "}
+                <Link to="/home">www.tracepoint.org</Link>{" "}
               </p>
             </div>
           </Fade>

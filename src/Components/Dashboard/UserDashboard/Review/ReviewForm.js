@@ -77,12 +77,12 @@ const ReviewForm = () => {
               </Form.Group>
               <Form.Group as={Col} md={16} lg={6}>
                 <Form.Label style={{ fontWeight: "bold" }}>
-                  Service Name
+                  Bus Number
                 </Form.Label>
                 <Form.Control
                   type="text"
                   {...register("serviceName", { required: true })}
-                  placeholder="Service Name"
+                  placeholder="Bus Number"
                 />
               </Form.Group>
               <Row />
@@ -98,12 +98,12 @@ const ReviewForm = () => {
               </Form.Group>
               <Form.Group as={Col} md={12} lg={6}>
                 <Form.Label style={{ fontWeight: "bold" }}>
-                  What do you do?
+                  Who you are?
                 </Form.Label>
                 <Form.Control
                   type="text"
                   {...register("position", { required: true })}
-                  placeholder="Student/CEO/Manager etc.."
+                  placeholder="Student/Teacher/Stuff"
                 />
               </Form.Group>
 
@@ -133,7 +133,7 @@ const ReviewForm = () => {
               type="submit"
             >
               {" "}
-              <FontAwesomeIcon icon={faCommentDots} /> Set review
+              <FontAwesomeIcon icon={faCommentDots} /> Submit Review
             </motion.button>
           </div>
         </Form>

@@ -3,6 +3,7 @@ import {
   faCommentAlt,
   faFileMedical,
   faList,
+  faLocation,
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +19,7 @@ const Sidebar = ({ setTitle }) => {
     <>
       <div className="sideBrand">
         <Link to="/" className="navText" style={{ textDecoration: "none",color:"#fff" }}>
-          Picturesque
+          TracePoint
         </Link>
       </div>
 
@@ -26,6 +27,15 @@ const Sidebar = ({ setTitle }) => {
         <ul>
           {email === "bsmrstueee90@gmail.com" ? (
             <>
+                 <li>
+                <NavLink
+                  onClick={() => setTitle("Map")}
+                  activeClassName="activePage"
+                  to="/dashboard/map"
+                >
+                  <FontAwesomeIcon icon={faLocation} className="icon" />Map
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   onClick={() => setTitle("Profile")}
@@ -37,24 +47,23 @@ const Sidebar = ({ setTitle }) => {
                   Profile
                 </NavLink>
               </li>
-
               <li>
                 <NavLink
-                  onClick={() => setTitle("Order List")}
+                  onClick={() => setTitle("Bus List")}
                   activeClassName="activePage"
                   to="/dashboard/orderList"
                 >
-                  <FontAwesomeIcon icon={faList} className="icon" /> Order lists
+                  <FontAwesomeIcon icon={faList} className="icon" /> Bus lists
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  onClick={() => setTitle("Add Service")}
+                  onClick={() => setTitle("Add Bus Driver")}
                   activeClassName="activePage"
                   to="/dashboard/addServices"
                 >
                   <FontAwesomeIcon icon={faFileMedical} className="icon" /> Add
-                  Service
+                  Driver
                 </NavLink>
               </li>
               <li>
@@ -64,23 +73,23 @@ const Sidebar = ({ setTitle }) => {
               </li>
               <li>
                 <NavLink
-                  onClick={() => setTitle("Manage Services")}
+                  onClick={() => setTitle("Manage Bus Driver")}
                   activeClassName="activePage"
                   to="/dashboard/manageServices"
                 >
                   <FontAwesomeIcon icon={faCog} className="icon" /> Manage
-                  Services
+                  Driver
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  onClick={() => setTitle("BookedList")}
+                  onClick={() => setTitle("Bus List")}
                   activeClassName="activePage"
                   exact
                   to="/dashboard/bookedList"
                 >
-                  <FontAwesomeIcon icon={faList} className="icon" /> Booked List
+                  <FontAwesomeIcon icon={faList} className="icon" /> Driver List
                 </NavLink>
               </li>
 
@@ -97,6 +106,16 @@ const Sidebar = ({ setTitle }) => {
             </>
           ) : (
             <>
+            
+              <li>
+                <NavLink
+                  onClick={() => setTitle("Map")}
+                  activeClassName="activePage"
+                  to="/dashboard/map"
+                >
+                  <FontAwesomeIcon icon={faLocation} className="icon" />Map
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   onClick={() => setTitle("Profile")}
@@ -110,12 +129,12 @@ const Sidebar = ({ setTitle }) => {
               </li>
               <li>
                 <NavLink
-                  onClick={() => setTitle("BookedList")}
+                  onClick={() => setTitle("Bus List")}
                   activeClassName="activePage"
                   exact
                   to="/dashboard/bookedList"
                 >
-                  <FontAwesomeIcon icon={faList} className="icon" /> Booked List
+                  <FontAwesomeIcon icon={faList} className="icon" /> Bus List
                 </NavLink>
               </li>
               <li>

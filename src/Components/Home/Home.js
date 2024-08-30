@@ -14,6 +14,8 @@ import NavBar from "../Common/Header/NavBar";
 import Companies from "./Companies/Companies";
 import Qoutes from "./Qoutes";
 import Stats from "./Stats/Stats";
+// import Tweets from "../Tweets/Tweets";
+
 
 const Home = () => {
   return (
@@ -22,20 +24,21 @@ const Home = () => {
       <div className="container">
         <ScrollTop />    
         <Hero />
-        <Qoutes />
-        <About />
-        <Stats />
-        <Services />
+        {/* <Qoutes /> */}
+        {/* <About /> */}
+        {/* <Stats /> */}
+        {/* <Services /> */}
         {/* teams */}
         <Teams />
         {/* Works */}
-        <WorksGallery />
+        {/* <WorksGallery /> */}
         {/* clients */}
         {/* <FreeQuestion /> */}
         {/* get in touch */}
-        <Review />
-        <Companies />
+        {/* <Review /> */}
+        {/* <Companies /> */}
         {/* Contact Us */}
+        {/* <Tweets/> */}
         <Contact />
 
         {/* footer */}
